@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment # Kubernetes' resource kind we are creating
+metadata:
+  name: k8s-vishal-bharti-demo
+spec:
+  selector:
+    matchLabels:
+      app: k8s-vishal-bharti-demo
+  replicas: 3 # Number of replicas that will be created for this deployment
+  template:
+    metadata:
+      labels:
+        app: k8s-vishal-bharti-demo
+    spec:
+      containers:
+        - name: k8s-vishal-bharti-demo
+          image: k8s-vishal-bharti-demo:1.0 # Image that will be used to containers in the cluster
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 9000 # The port that the container is running on in the cluster
