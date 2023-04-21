@@ -1,11 +1,11 @@
-package com.publicis.sapient.p2p;
+package com.vishal.bharti;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProductApplication {
+public class DemoApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(ProductApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 }

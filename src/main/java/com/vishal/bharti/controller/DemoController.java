@@ -1,4 +1,4 @@
-package com.publicis.sapient.p2p.controller;
+package com.vishal.bharti.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
